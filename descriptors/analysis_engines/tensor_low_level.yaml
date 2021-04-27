@@ -1,5 +1,5 @@
 ae:
-  name: mongo_low_level
+  name: tensor_low_level
 fixedflow:
 #  - Trigger
   - CollectionReader
