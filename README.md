@@ -17,3 +17,14 @@ Step 4 & 5 can be also done in the CMakeLists.txt
 
 ## Test usage after setup
 $ rosrun robosherlock runAAE _ae:=tensor_low_level
+
+## How to add/use own models?
+Check out the following tutorial for reference: https://serizba.github.io/cppflow/examples.html#inference-on-efficientnet
+````
+import tensorflow as tf
+
+model = tf.keras.applications.EfficientNetB0()
+
+# Export the model to a SavedModel
+model.save('model', save_format='tf')
+````
